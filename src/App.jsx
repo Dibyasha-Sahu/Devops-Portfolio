@@ -40,7 +40,7 @@ function App() {
 
               <TypeAnimation
                 sequence={[
-                  "Junior DevOps Engineer",
+                  "Junior Cloud & DevOps Engineer",
                   999999,
                 ]}
                 wrapper="h2"

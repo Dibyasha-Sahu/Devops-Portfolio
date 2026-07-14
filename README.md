@@ -1,16 +1,168 @@
-# React + Vite
+# 🚀 DevOps Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **DevOps Portfolio** built with **React, Vite, and Tailwind CSS** to showcase my skills, certifications, and hands-on DevOps projects.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+    https://devops-portfolio-beige.vercel.app/
+---
 
-## React Compiler
+ ## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Modern responsive UI
+- Smooth scrolling animations
+- Interactive DevOps project showcase
+- Architecture diagrams for projects
+- Skills categorized by technology
+- Certifications section
+- Contact section
+- Mobile-friendly design
+- Built with reusable React components
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+
+### Icons
+- React Icons
+
+### Version Control
+- Git
+- GitHub
+
+### Deployment
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── About.jsx
+│   ├── Skills.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│   ├── Certifications.jsx
+│   ├── FadeInSection.jsx
+│   ├── DevSecOpsDetails.jsx
+│   ├── KubernetesDetails.jsx
+│   └── Architecture/
+│       ├── DevSecOpsArchitecture.jsx
+│       └── KubernetesArchitecture.jsx
+│
+├── data/
+│   └── projects.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## 🚀 Featured Projects
+
+### GitHub Actions DevSecOps Capstone
+
+**Highlights**
+
+- CI/CD pipeline using GitHub Actions
+- Docker image build and publish
+- Trivy vulnerability scanning
+- Dependency Review
+- Secret Scanning
+- Deployment simulation
+- Health check automation
+
+**Tech**
+
+- GitHub Actions
+- Docker
+- Python
+- Trivy
+- GitHub Security
+
+---
+
+### WordPress & MySQL on Kubernetes
+
+**Highlights**
+
+- Kubernetes Deployment
+- MySQL StatefulSet
+- Persistent Volume Claim
+- ConfigMap & Secrets
+- Headless Service
+- Horizontal Pod Autoscaler
+- Liveness & Readiness Probes
+
+**Tech**
+
+- Kubernetes
+- Docker
+- WordPress
+- MySQL
+- kind
+
+---
+
+## 💻 Run Locally
+
+Clone the repository
+
+```bash
+git clone https://github.com/Dibyasha-Sahu/Devops-Portfolio.git
+```
+
+Go to the project directory
+
+```bash
+cd Devops-Portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Create a production build
+
+```bash
+npm run build
+```
+
+---
+
+## 📜 Certifications
+
+- IBM DevOps and Software Engineering Professional Certificate
+- AWS Cloud Practitioner
+- AWS Solutions Architect
+- TrainWithShubham DevOps Engineer Associate
+
+---
+
+## 📬 Connect With Me
+
+- **GitHub:** https://github.com/Dibyasha-Sahu
+- **LinkedIn:** https://www.linkedin.com/in/dibyasha-sahu-0810432a6/
+
+---
+⭐ If you like this portfolio, consider giving the repository a star.

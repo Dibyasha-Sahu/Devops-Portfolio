@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-24">
-      <p className="font-mono text-sm text-[#E6501B]">06. CONTACT</p>
+      <p className="font-mono text-sm text-[#E6501B]">07. CONTACT</p>
 
       <div className="mt-3 rounded-2xl border border-slate-800 bg-[#161b22] px-6 py-12 text-center md:px-12">
         <p className="font-mono text-sm text-[#ff8b66]">

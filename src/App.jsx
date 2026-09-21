@@ -1,6 +1,7 @@
 // src/App.jsx
 import Navbar from "./components/Navbar";
 import About from "./components/About";
+import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
@@ -107,6 +108,8 @@ function App() {
         <FadeInSection>
           <About />
         </FadeInSection>
+
+        <Education />
 
         {/* Skills */}
         <FadeInSection>

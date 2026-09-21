@@ -14,4 +14,24 @@ export const projects = [
     github:
       "https://github.com/Dibyasha-Sahu/Capstone-Deploy-WordPress-MySQL-on-Kubernetes",
   },
+  {
+    title: "Kubernetes DevSecOps Pipeline",
+
+    description:
+      "Built an end-to-end DevSecOps pipeline for a containerized Flask application with automated testing, security scanning, Docker image builds, Kubernetes deployment, Helm-based application management, and CI/CD automation.",
+
+    tools: [
+      "GitHub Actions",
+      "Docker",
+      "Kubernetes",
+      "Helm",
+      "Terraform",
+      "Trivy",
+      "Prometheus",
+      "Grafana",
+    ],
+
+    github:
+      "https://github.com/Dibyasha-Sahu/kubernetes-devsecops-pipeline",
+  },
 ];

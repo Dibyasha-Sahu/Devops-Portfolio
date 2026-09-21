@@ -128,7 +128,7 @@ function Certifications() {
   return (
     <section id="certificates" className="mx-auto max-w-6xl px-6 py-24">
       <p className="font-mono text-sm text-[#E6501B]">
-        04. CERTIFICATIONS
+        05. CERTIFICATIONS
       </p>
 
       <h2 className="mt-2 text-3xl font-bold text-white">
@@ -146,7 +146,7 @@ function Certifications() {
 
       <div className="mt-16">
         <p className="font-mono text-sm text-[#E6501B]">
-          05. AWS ACHIEVEMENTS
+          06. AWS ACHIEVEMENTS
         </p>
 
         <h2 className="mt-2 text-3xl font-bold text-white">

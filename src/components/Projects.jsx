@@ -3,6 +3,7 @@ import { FaGithub, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { projects } from "../data/projects";
 import DevSecOpsDetails from "./DevSecOpsDetails";
 import KubernetesDetails from "./KubernetesDetails";
+import DevSecOpsPipelineDetails from "./DevSecOpsPipelineDetails";
 
 function Projects() {
   const [openProject, setOpenProject] = useState(null);
@@ -14,7 +15,7 @@ function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl px-6 py-24">
       <p className="font-mono text-sm text-[#E6501B]">
-        03. FEATURED PROJECTS
+        04. FEATURED PROJECTS
       </p>
 
       <h2 className="mt-2 text-3xl font-bold text-white">
@@ -100,6 +101,14 @@ function Projects() {
               openProject === project.title && (
                 <div className="mt-8 border-t border-slate-700 pt-6">
                   <KubernetesDetails />
+                </div>
+            )}
+
+            {/* Kubernetes DevSecOps Pipeline */}
+            {project.title === "Kubernetes DevSecOps Pipeline" &&
+              openProject === project.title && (
+                <div className="mt-8 border-t border-slate-700 pt-6">
+                  <DevSecOpsPipelineDetails />
                 </div>
             )}
 

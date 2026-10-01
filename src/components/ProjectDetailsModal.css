@@ -1,0 +1,381 @@
+/* =========================================================
+   PROJECT DETAILS MODAL
+========================================================= */
+
+.project-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(2, 6, 12, 0.82);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  animation: projectModalOverlayIn 0.22s ease-out;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.project-modal {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: min(1100px, 100%);
+
+  max-height: calc(100vh - 48px);
+
+  overflow: hidden;
+
+  border: 1px solid #263447;
+
+  border-radius: 18px;
+
+  background: #0d1117;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.55),
+    0 0 45px rgba(230, 80, 27, 0.06);
+
+  animation: projectModalIn 0.25s ease-out;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.project-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 20px 24px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(22, 27, 34, 0.98),
+      rgba(13, 17, 23, 0.98)
+    );
+}
+
+
+/* LEFT SIDE */
+
+.project-modal-heading {
+  min-width: 0;
+}
+
+.project-modal-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #e6501b;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  letter-spacing: 0.12em;
+}
+
+.project-modal-heading h2 {
+  margin: 0;
+
+  color: #f8fafc;
+
+  font-size: clamp(18px, 2.2vw, 26px);
+
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.project-modal-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+/* GITHUB */
+
+.project-modal-github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid #263447;
+
+  border-radius: 9px;
+
+  background: #161b22;
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-modal-github:hover {
+  color: #e6501b;
+
+  border-color: rgba(230, 80, 27, 0.55);
+
+  background: rgba(230, 80, 27, 0.08);
+
+  transform: translateY(-2px);
+}
+
+
+/* CLOSE */
+
+.project-modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: 1px solid #263447;
+
+  border-radius: 9px;
+
+  background: #161b22;
+
+  color: #94a3b8;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-modal-close:hover {
+  color: #ffffff;
+
+  border-color: rgba(230, 80, 27, 0.55);
+
+  background: rgba(230, 80, 27, 0.1);
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   ORANGE DIVIDER
+========================================================= */
+
+.project-modal-divider {
+  width: 100%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(230, 80, 27, 0.75),
+      transparent
+    );
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.project-modal-content {
+  flex: 1;
+
+  min-height: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 0;
+}
+
+
+/* CUSTOM SCROLLBAR */
+
+.project-modal-content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.project-modal-content::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+.project-modal-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: #263447;
+}
+
+.project-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #e6501b;
+}
+
+
+/* =========================================================
+   MAKE EXISTING DETAILS FIT THE MODAL
+========================================================= */
+
+.project-modal-content > * {
+  width: 100%;
+}
+
+
+/* Remove unnecessary outer spacing from detail components */
+
+.project-modal-content .rag-details {
+  padding: 26px;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes projectModalOverlayIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes projectModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .project-modal-overlay {
+    padding: 14px;
+  }
+
+  .project-modal {
+    max-height: calc(100vh - 28px);
+
+    border-radius: 15px;
+  }
+
+  .project-modal-header {
+    padding: 17px 18px;
+  }
+
+  .project-modal-github,
+  .project-modal-close {
+    width: 36px;
+    height: 36px;
+  }
+
+  .project-modal-content .rag-details {
+    padding: 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .project-modal-overlay {
+    padding: 8px;
+  }
+
+  .project-modal {
+    max-height: calc(100vh - 16px);
+
+    border-radius: 13px;
+  }
+
+  .project-modal-header {
+    align-items: flex-start;
+
+    padding: 15px;
+  }
+
+  .project-modal-heading h2 {
+    font-size: 17px;
+  }
+
+  .project-modal-label {
+    font-size: 10px;
+  }
+
+  .project-modal-actions {
+    gap: 6px;
+  }
+
+  .project-modal-github,
+  .project-modal-close {
+    width: 34px;
+    height: 34px;
+
+    font-size: 14px;
+  }
+
+  .project-modal-content .rag-details {
+    padding: 12px;
+  }
+}
